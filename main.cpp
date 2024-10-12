@@ -16,7 +16,7 @@ int main() {
 
         switch(choice) {
             case(1):
-                std::cout << "Here's the current status of your bank balance: \n" << balance << "\n";
+                std::cout << "Here's the current status of your bank balance: \n" << "$" << balance << "\n";
             break;
             case(2):
                 deposit();
@@ -48,7 +48,7 @@ void deposit() {
     }
 
     else {
-        std::cout << d_choice << " dollar(s) added to your bank account.\n";
+        std::cout << "$" << d_choice << " dollar(s) added to your bank account.\n";
     }
 
 }
@@ -63,7 +63,7 @@ void withdraw() {
         std::cout << "You don't have enough money to withdraw\n";
     }
     else {
-        std::cout << w_choice << " dollar(s) withdrew to your bank account.\n";
+        std::cout << "$" << w_choice << " dollar(s) withdrew from your bank account.\n";
         balance = balance - w_choice;
     }
 }
